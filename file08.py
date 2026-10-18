@@ -6,5 +6,13 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    total=0
+    for i in data:
+        if i.isdigit():
+            if int(i) > total:
+             total=int(i)
+    return total
 
+data=input()
+print(main(data))
 # Read data from file
