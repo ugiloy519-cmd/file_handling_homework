@@ -5,6 +5,9 @@ def main(data:str):
         data: str
     Returns:
         list: return answer
+    
     """
-
-# Read data from file
+    return list(data)
+data=input()
+print(main(data))
+# Read data from file 
