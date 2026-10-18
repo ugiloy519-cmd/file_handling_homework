@@ -6,5 +6,14 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    sm=9
+    for i in data:
+        if i.isdigit():
+            if int(i)>sm:
+                sm=int(i)
+    return sm
+data=input()
+print(main(data))
+
 
 # Read data from file
