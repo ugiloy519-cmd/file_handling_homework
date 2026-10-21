@@ -6,7 +6,13 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    return list(data)
-data=input()
-print(main(data))
+    result=[]
+    for i in data:
+        if i.isdigit():
+            result += [int(i)]
+    return result
+f=open("data/data03.txt")
+data=f.read()
+l=main(data)
+print(l)
 # Read data from file
