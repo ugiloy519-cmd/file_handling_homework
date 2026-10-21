@@ -9,8 +9,10 @@ def main(data:str):
     result=[]
     for i in data:
         if not i.isdigit():
-            result.append(i)
+            result+=[i]
     return result
-data=input()
-print(main(data))   
+f=open("data/data04.txt")
+data=f.read()
+l=main(data)
+print(l)   
 # Read data from file
