@@ -6,12 +6,14 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    row=data.split(',')
+    row=data.split()
     large=0
     for i in row:
-        if len(row)> large:
-            large=len(row)
+        if len(i)>large:
+            large=len(i)
     return large
-data=input()
-print(main(data))
+f=open("data/data10.txt")
+data=f.read()
+l=main(data)
+print(l)
 # Read data from file
