@@ -6,8 +6,13 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    return len(data)
-file=open('file_handling_homework\data\data02.txt','r')
-data=file.read
-print(main(data))
+    result=0
+    for i in data:
+        result+=1
+    return result
+file=open('data/data02.txt')
+data=file.read()
+l=main(data)
+print(l)
+
 # Read data from file 
