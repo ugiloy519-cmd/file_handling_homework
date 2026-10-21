@@ -11,8 +11,10 @@ def main(data:str):
         if i.isdigit():
             total += int(i)
     return total
-data=input()
-print(main(data))
+f=open("data/data07.txt")
+data=f.read()
+l=main(data)
+print(l)
 
     
 # Read data from file
