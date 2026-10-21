@@ -9,11 +9,13 @@ def main(data:str):
     sm=9
     for i in data:
         if i.isdigit():
-            if int(i)>sm:
+            if int(i)<sm:
                 sm=int(i)
     return sm
-data=input()
-print(main(data))
+f=open("data/data09.txt")
+data=f.read()
+l=main(data)
+print(l)
 
 
 # Read data from file
