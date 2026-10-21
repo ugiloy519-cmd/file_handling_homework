@@ -7,7 +7,14 @@ def main(data:str):
         list: return answer
     
     """
-    return list(data)
-data=input()
-print(main(data))
+    result=[]
+    for i in data.split(","):
+        result += [int(i)]
+    return result
+        
+f=open("data/data01.txt")
+data=f.read()
+l=main(data)
+print(l)
+
 # Read data from file 
